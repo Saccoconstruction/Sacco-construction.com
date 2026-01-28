@@ -172,52 +172,57 @@
           <p>Tell us about the project. We’ll follow up to schedule a walkthrough or next steps.</p>
         </div>
 
-        https://formspree.io/f/xeekojdo 
-        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="grid2">
-            <label>
-              Full Name
-              <input name="name" type="text" required />
-            </label>
-            <label>
-              Email
-              <input name="email" type="email" required />
-            </label>
-          </div>
+     <form class="form" action="https://formspree.io/f/xeekojdo" method="POST">
+  <!-- Optional: redirect after submit (safe even before HTTPS is enforced) -->
+  <input type="hidden" name="_redirect" value="https://www.sacco-construction.com/#contact" />
 
-          <div class="grid2">
-            <label>
-              Phone
-              <input name="phone" type="tel" required />
-            </label>
-            <label>
-              Project Type
-              <select name="project_type" required>
-                <option value="" disabled selected>Select one</option>
-                <option>Kitchens</option>
-                <option>Bathrooms</option>
-                <option>Finished basements</option>
-                <option>Interior remodeling</option>
-                <option>Light commercial</option>
-              </select>
-            </label>
-          </div>
+  <!-- Lead organization -->
+  <input type="hidden" name="source" value="Website Estimate Request" />
+  <input type="hidden" name="domain" value="sacco-construction.com" />
+  <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
 
-          <label>
-            Project Details
-            <textarea name="message" rows="6" placeholder="Location, timing, scope, and any details that matter." required></textarea>
-          </label>
+  <div class="grid2">
+    <label>
+      Full Name
+      <input name="name" type="text" required />
+    </label>
+    <label>
+      Email
+      <input name="email" type="email" required />
+    </label>
+  </div>
 
-          <input type="hidden" name="to" value="estimate@sacco-construction.com" />
-          <input type="hidden" name="subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
+  <div class="grid2">
+    <label>
+      Phone
+      <input name="phone" type="tel" required />
+    </label>
+    <label>
+      Project Type
+      <select name="project_type" required>
+        <option value="" disabled selected>Select one</option>
+        <option>Kitchens</option>
+        <option>Bathrooms</option>
+        <option>Finished basements</option>
+        <option>Interior remodeling</option>
+        <option>Light commercial</option>
+      </select>
+    </label>
+  </div>
 
-          <button class="btn btn-solid" type="submit">Send Request</button>
+  <label>
+    Project Details
+    <textarea name="message" rows="6" placeholder="Location, timing, scope, and any details that matter." required></textarea>
+  </label>
 
-          <p class="small muted">
-            Prefer email? <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
-            &nbsp;|&nbsp; Phone: <a href="tel:16033399116">603-339-9116</a>
-          </p>
-        </form>
+  <button class="btn btn-solid" type="submit">Send Request</button>
+
+  <p class="small muted">
+    Prefer email? <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
+    &nbsp;|&nbsp; Phone: <a href="tel:16033399116">603-339-9116</a>
+  </p>
+</form>
+
       </div>
     </section>
   </main>
