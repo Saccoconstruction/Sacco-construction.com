@@ -7,8 +7,19 @@
   <title>Sacco Construction | Southern NH Remodeling & Light Commercial</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="site-header">
+<script>
+  const header = document.getElementById("siteHeader");
+  const onScroll = () => {
+    if (window.scrollY > 10) header.classList.add("is-scrolled");
+    else header.classList.remove("is-scrolled");
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+</script>
+
+  <body>
+ <header class="site-header" id="siteHeader">
+
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Sacco Construction home">
         <span class="logo-badge">
