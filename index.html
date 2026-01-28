@@ -11,7 +11,9 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Sacco Construction home">
-        <img src="assets/logo.png" alt="Sacco Construction logo" class="logo" />
+        <span class="logo-badge">
+          <img src="assets/logo.png" alt="Sacco Construction logo" class="logo" />
+        </span>
       </a>
 
       <nav class="nav">
@@ -100,11 +102,14 @@
     <section id="about" class="section section-alt">
       <div class="container split">
         <div>
-          <h2>Built like it should be.</h2>
-          <p>
-            Sacco Construction focuses on premium interior remodeling and select light commercial work in Southern New Hampshire.
-            We operate with a simple standard: <strong>do it right, communicate clearly, and leave the site clean</strong>.
-          </p>
+          <div class="section-head">
+            <h2>Built like it should be.</h2>
+            <p>
+              Sacco Construction focuses on premium interior remodeling and select light commercial work in Southern New Hampshire.
+              We operate with a simple standard: <strong>do it right, communicate clearly, and leave the site clean</strong>.
+            </p>
+          </div>
+
           <ul class="bullets">
             <li>Clear scope, realistic scheduling</li>
             <li>Respect for your home and your time</li>
@@ -194,7 +199,6 @@
             <textarea name="message" rows="6" placeholder="Location, timing, scope, and any details that matter." required></textarea>
           </label>
 
-          <!-- Helps you filter and label incoming leads -->
           <input type="hidden" name="to" value="estimate@sacco-construction.com" />
           <input type="hidden" name="subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
 
