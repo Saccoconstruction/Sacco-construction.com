@@ -40,7 +40,11 @@ a:hover{opacity:.9}
   align-items:center;
   justify-content:space-between;
   gap:20px;
-  padding:14px 0;
+  padding:16px 0;
+  transition: padding .18s ease;
+}
+.site-header.is-scrolled .header-inner{
+  padding:10px 0;
 }
 
 /* Logo badge so a white logo works on a light site */
@@ -50,12 +54,17 @@ a:hover{opacity:.9}
   gap:10px;
 }
 
-
 .logo{
-  height:300px;
+  height:300px;       /* big on load */
   width:auto;
   display:block;
+  transition: height .18s ease;
 }
+.site-header.is-scrolled .logo{
+  height:96px;        /* smaller on scroll */
+}
+
+
 
 /* Nav */
 .nav{
