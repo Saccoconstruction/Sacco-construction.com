@@ -367,3 +367,7 @@ input:focus,select:focus,textarea:focus{
   .nav{gap:10px}
   .logo{height:58px}
 }
+@media (max-width: 900px){
+  .logo{height:110px;}
+  .site-header.is-scrolled .logo{height:74px;}
+}
