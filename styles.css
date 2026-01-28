@@ -1,13 +1,15 @@
 :root{
-  --bg:#0b0b0b;
-  --bg2:#111111;
-  --card:#141414;
-  --text:#f5f5f5;
-  --muted:#bdbdbd;
-  --line:#262626;
-  --accent:#ffffff;
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --bg:#ffffff;
+  --bg2:#f6f8fb;        /* light section alt */
+  --card:#ffffff;
+  --text:#0f172a;       /* slate/near-black */
+  --muted:#475569;      /* slate muted */
+  --line:#e2e8f0;       /* light border */
+  --accent:#2f5d7c;     /* muted steel blue */
+  --accent2:#1f3f54;    /* deeper steel for hover */
+  --shadow: 0 10px 30px rgba(2,6,23,.08);
 }
+
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#000;color:var(--text)}
