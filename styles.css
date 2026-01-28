@@ -50,15 +50,6 @@ a:hover{opacity:.9}
   gap:10px;
 }
 
-.logo-badge{
-  background:#0b0b0b;
-  border-radius:16px;
-  padding:10px 14px;
-  border:1px solid #111;
-  box-shadow: var(--shadow);
-  display:inline-flex;
-  align-items:center;
-}
 
 .logo{
   height:64px;
