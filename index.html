@@ -1,41 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTK4KXJPP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WCTK4KXJPP');
-</script>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Sacco Construction is a Southern New Hampshire interior remodeling contractor specializing in kitchens, bathrooms, finished basements, full interior renovations, and light commercial work." />
- <title>Sacco Construction | Interior Remodeling Contractor in Southern NH</title>
+  <meta name="description" content="Sacco Construction is a Southern New Hampshire interior remodeling contractor specializing in kitchens, bathrooms, finished basements, full interior renovations, and light commercial work." />
+  <title>Sacco Construction | Interior Remodeling Contractor in Southern NH</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTK4KXJPP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WCTK4KXJPP');
+  </script>
 </head>
-<script>
-  const header = document.getElementById("siteHeader");
-  const onScroll = () => {
-    if (window.scrollY > 10) header.classList.add("is-scrolled");
-    else header.classList.remove("is-scrolled");
-  };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-</script>
 
-  <body>
- <header class="site-header" id="siteHeader">
-
+<body>
+  <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Sacco Construction home">
-        <span class="logo-badge">
-          <img src="assets/LOGO.jpg" alt="Sacco Construction logo" class="logo" />
+        <img src="assets/LOGO.jpg" alt="Sacco Construction logo" class="logo" />
+      </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
@@ -138,7 +127,7 @@
           <div class="service-area">
             <h3>Service Area</h3>
             <p>
-              Serving Southern New Hampshire, including Rockingham & Hillsborough County communities such as:
+              Serving Southern New Hampshire, including Rockingham &amp; Hillsborough County communities such as:
               <strong>Salem, Windham, Derry, Londonderry, Pelham, Hudson, Nashua, Merrimack, Bedford, Manchester, Auburn,
               Chester, Hampstead, Atkinson, Plaistow, Kingston</strong> — and surrounding towns.
             </p>
@@ -182,55 +171,52 @@
           <p>Tell us about the project. We’ll follow up to schedule a walkthrough or next steps.</p>
         </div>
 
-<form id="estimateForm" class="form" action="https://formspree.io/f/xeekojdo" method="POST">
+        <form id="estimateForm" class="form" action="https://formspree.io/f/xeekojdo" method="POST">
+          <input type="hidden" name="source" value="Website Estimate Request" />
+          <input type="hidden" name="domain" value="sacco-construction.com" />
+          <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
 
-  <!-- Lead organization -->
-  <input type="hidden" name="source" value="Website Estimate Request" />
-  <input type="hidden" name="domain" value="sacco-construction.com" />
-  <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
+          <div class="grid2">
+            <label>
+              Full Name
+              <input name="name" type="text" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required />
+            </label>
+          </div>
 
-  <div class="grid2">
-    <label>
-      Full Name
-      <input name="name" type="text" required />
-    </label>
-    <label>
-      Email
-      <input name="email" type="email" required />
-    </label>
-  </div>
+          <div class="grid2">
+            <label>
+              Phone
+              <input name="phone" type="tel" required />
+            </label>
+            <label>
+              Project Type
+              <select name="project_type" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Kitchens</option>
+                <option>Bathrooms</option>
+                <option>Finished basements</option>
+                <option>Interior remodeling</option>
+                <option>Light commercial</option>
+              </select>
+            </label>
+          </div>
 
-  <div class="grid2">
-    <label>
-      Phone
-      <input name="phone" type="tel" required />
-    </label>
-    <label>
-      Project Type
-      <select name="project_type" required>
-        <option value="" disabled selected>Select one</option>
-        <option>Kitchens</option>
-        <option>Bathrooms</option>
-        <option>Finished basements</option>
-        <option>Interior remodeling</option>
-        <option>Light commercial</option>
-      </select>
-    </label>
-  </div>
+          <label>
+            Project Details
+            <textarea name="message" rows="6" placeholder="Location, timing, scope, and any details that matter." required></textarea>
+          </label>
 
-  <label>
-    Project Details
-    <textarea name="message" rows="6" placeholder="Location, timing, scope, and any details that matter." required></textarea>
-  </label>
+          <button class="btn btn-solid" type="submit">Send Request</button>
 
-  <button class="btn btn-solid" type="submit">Send Request</button>
-
-  <p class="small muted">
-    Prefer email? <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
-    &nbsp;|&nbsp; Phone: <a href="tel:16033399116">603-339-9116</a>
-  </p>
-</form>
-
+          <p class="small muted">
+            Prefer email? <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
+            &nbsp;|&nbsp; Phone: <a href="tel:16033399116">603-339-9116</a>
+          </p>
+        </form>
       </div>
     </section>
   </main>
@@ -242,58 +228,78 @@
     </div>
   </footer>
 
-<script>
-  (function () {
-    const form = document.getElementById("estimateForm");
-    if (!form) return;
+  <!-- Header shrink on scroll (MUST be after the header exists) -->
+  <script>
+    (function () {
+      const header = document.getElementById("siteHeader");
+      if (!header) return;
 
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
+      const onScroll = () => {
+        if (window.scrollY > 20) header.classList.add("is-scrolled");
+        else header.classList.remove("is-scrolled");
+      };
 
-      const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
-      const originalText = submitBtn ? submitBtn.textContent : "";
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
 
-      try {
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.textContent = "Sending...";
-        }
+  <!-- Year in footer -->
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 
-        const formData = new FormData(form);
+  <!-- Formspree AJAX submit + redirect -->
+  <script>
+    (function () {
+      const form = document.getElementById("estimateForm");
+      if (!form) return;
 
-        const res = await fetch(form.action, {
-          method: "POST",
-          body: formData,
-          headers: { "Accept": "application/json" }
-        });
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-        if (res.ok) {
-          window.location.href = "/thank-you.html";
-          return;
-        }
+        const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+        const originalText = submitBtn ? submitBtn.textContent : "";
 
-        // If Formspree rejects, show a helpful message
-        let msg = "Something went wrong submitting the form. Please try again or call 603-339-9116.";
         try {
-          const data = await res.json();
-          if (data && data.errors && data.errors.length) {
-            msg = data.errors.map(e => e.message).join(" ");
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
           }
-        } catch (_) {}
 
-        alert(msg);
-      } catch (err) {
-        alert("Network error. Please try again or call 603-339-9116.");
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText || "Submit";
+          const formData = new FormData(form);
+
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (res.ok) {
+            window.location.href = "/thank-you.html";
+            return;
+          }
+
+          let msg = "Something went wrong submitting the form. Please try again or call 603-339-9116.";
+          try {
+            const data = await res.json();
+            if (data && data.errors && data.errors.length) {
+              msg = data.errors.map(e => e.message).join(" ");
+            }
+          } catch (_) {}
+
+          alert(msg);
+        } catch (err) {
+          alert("Network error. Please try again or call 603-339-9116.");
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText || "Submit";
+          }
         }
-      }
-    });
-  })();
-</script>
-
-    
+      });
+    })();
+  </script>
 </body>
 </html>
+
