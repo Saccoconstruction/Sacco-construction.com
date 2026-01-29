@@ -309,4 +309,227 @@
         </div>
 
         <div class="spacer-14"></div>
-        <a class="btn
+        <a class="btn btn-outline" href="#contact">Get an Estimate</a>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p>Quick answers to the questions that affect scope, pricing, and schedule.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Do you handle permits and inspections?</summary>
+            <div class="faq-body">
+              <p>For projects that require permitting, we’ll outline what’s required during the walkthrough and coordinate the process as part of the scope.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you subcontract plumbing and electrical?</summary>
+            <div class="faq-body">
+              <p>Most remodels require licensed trades. If your project needs them, we’ll coordinate and schedule them as part of the plan.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What information helps you estimate fastest?</summary>
+            <div class="faq-body">
+              <p>Your town/zip, rough budget range, desired start window, and a few photos of the existing space.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How far out are you booking?</summary>
+            <div class="faq-body">
+              <p>It depends on scope and season. Include your start window in the request and we’ll give you a realistic schedule expectation.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Request an Estimate</h2>
+          <p>Tell us about the project. We’ll follow up to schedule a walkthrough or next steps.</p>
+        </div>
+
+        <form id="estimateForm" class="form" action="https://formspree.io/f/xeekojdo" method="POST">
+          <input type="hidden" name="source" value="Website Estimate Request" />
+          <input type="hidden" name="domain" value="sacco-construction.com" />
+          <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
+
+          <div class="grid2">
+            <label>
+              Full Name
+              <input name="name" type="text" required autocomplete="name" />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required autocomplete="email" />
+            </label>
+          </div>
+
+          <div class="grid2">
+            <label>
+              Phone
+              <input name="phone" type="tel" required autocomplete="tel" />
+            </label>
+            <label>
+              Town / Zip
+              <input name="town_zip" type="text" required placeholder="e.g., Salem, NH 03079" />
+            </label>
+          </div>
+
+          <div class="grid3">
+            <label>
+              Project Type
+              <select name="project_type" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Kitchens</option>
+                <option>Bathrooms</option>
+                <option>Finished basements</option>
+                <option>Interior remodeling</option>
+                <option>Light commercial</option>
+              </select>
+            </label>
+
+            <label>
+              Budget Range
+              <select name="budget_range" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Under $10k</option>
+                <option>$10k–$25k</option>
+                <option>$25k–$50k</option>
+                <option>$50k–$100k</option>
+                <option>$100k+</option>
+              </select>
+            </label>
+
+            <label>
+              Start Window
+              <select name="start_window" required>
+                <option value="" disabled selected>Select one</option>
+                <option>0–3 months</option>
+                <option>3–6 months</option>
+                <option>6+ months</option>
+                <option>Just exploring</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Project Details
+            <textarea name="message" rows="6" placeholder="Scope, goals, constraints, finish level, and anything that matters." required></textarea>
+          </label>
+
+          <label>
+            Photo link (optional)
+            <input name="photo_link" type="url" placeholder="Google Drive / iCloud / Dropbox link" />
+          </label>
+
+          <button class="btn btn-solid" type="submit">Send Request</button>
+
+          <div class="next-steps">
+            <h3>What happens next</h3>
+            <ul>
+              <li>We review your request and respond within 1 business day.</li>
+              <li>Quick call to confirm scope + timeline.</li>
+              <li>Schedule a walkthrough if it’s a fit.</li>
+            </ul>
+            <p class="small muted">
+              Prefer email? <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
+              &nbsp;|&nbsp; Phone: <a href="tel:16033399116">603-339-9116</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Sacco Construction LLC. All rights reserved.</p>
+      <p><a href="tel:16033399116">603-339-9116</a> · <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Header shrink on scroll -->
+  <script>
+    (function () {
+      const header = document.getElementById("siteHeader");
+      if (!header) return;
+
+      const onScroll = () => {
+        if (window.scrollY > 20) header.classList.add("is-scrolled");
+        else header.classList.remove("is-scrolled");
+      };
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+  <!-- Year in footer -->
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Formspree AJAX submit + redirect -->
+  <script>
+    (function () {
+      const form = document.getElementById("estimateForm");
+      if (!form) return;
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+        const originalText = submitBtn ? submitBtn.textContent : "";
+
+        try {
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+          }
+
+          const formData = new FormData(form);
+
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (res.ok) {
+            window.location.href = "/thank-you.html";
+            return;
+          }
+
+          let msg = "Something went wrong submitting the form. Please try again or call 603-339-9116.";
+          try {
+            const data = await res.json();
+            if (data && data.errors && data.errors.length) {
+              msg = data.errors.map(e => e.message).join(" ");
+            }
+          } catch (_) {}
+
+          alert(msg);
+        } catch (err) {
+          alert("Network error. Please try again or call 603-339-9116.");
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText || "Submit";
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
