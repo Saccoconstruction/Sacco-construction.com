@@ -24,7 +24,7 @@
 
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- LocalBusiness Schema (edit fields marked EDIT ME if you want to tighten later) -->
+  <!-- LocalBusiness Schema (optional: add sameAs links once you have them) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -95,16 +95,12 @@
             <span class="badge">Clear scheduling & updates</span>
           </div>
 
-          <p class="micro muted">
-            Serving Rockingham &amp; Hillsborough County and surrounding towns.
-          </p>
+          <p class="micro muted">Serving Rockingham &amp; Hillsborough County and surrounding towns.</p>
         </div>
 
         <div class="hero-card">
           <h2>Quick Estimate Intake</h2>
-          <p class="small">
-            Share a few project details and we’ll follow up with next steps.
-          </p>
+          <p class="small">Share a few project details and we’ll follow up with next steps.</p>
           <a class="btn btn-solid full" href="#contact">Start Estimate Request</a>
           <div class="divider"></div>
           <p class="small muted">
@@ -238,7 +234,7 @@
           <div class="divider"></div>
 
           <p class="small muted">
-            Fastest path to a solid estimate: include your town, rough budget range, and a few photos.
+            Fastest path to a solid estimate: include your town, rough budget range, start window, and a few photos.
           </p>
 
           <div class="spacer-10"></div>
@@ -255,15 +251,15 @@
         </div>
 
         <!-- Replace these placeholders with real images when ready.
-             Example:
-             <figure class="gallery-item">
-               <img src="assets/kitchen-01.jpg" alt="Kitchen remodel in Salem, NH" loading="lazy" />
-               <figcaption>Kitchen remodel — Salem, NH</figcaption>
-             </figure>
+          Example:
+          <figure class="gallery-item">
+            <img src="assets/kitchen-01.jpg" alt="Kitchen remodel in Salem, NH" loading="lazy" />
+            <figcaption>Kitchen remodel — Salem, NH</figcaption>
+          </figure>
         -->
-        <div class="gallery gallery-real" id="galleryGrid">
+        <div class="gallery gallery-real">
           <figure class="gallery-item is-placeholder">
-            <div class="ph">Drop project photos into /assets and update these blocks.</div>
+            <div class="ph">Drop project photos into /assets and replace these blocks.</div>
             <figcaption>Kitchen remodel — Town, NH</figcaption>
           </figure>
           <figure class="gallery-item is-placeholder">
@@ -294,7 +290,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Client feedback</h2>
-          <p>Once you have a few Google reviews, add 3–6 excerpts here for instant trust.</p>
+          <p>Add 3–6 short excerpts here for instant trust (communication, cleanliness, finish quality).</p>
         </div>
 
         <div class="testimonials">
@@ -303,100 +299,14 @@
             <p class="quote-meta">— Name, Town NH · Project type</p>
           </article>
           <article class="quote-card">
-            <p class="quote">“Short, specific reviews convert best: communication, cleanliness, finish quality.”</p>
+            <p class="quote">“Short, specific reviews convert best.”</p>
             <p class="quote-meta">— Name, Town NH · Project type</p>
           </article>
           <article class="quote-card">
-            <p class="quote">“Add 1–2 sentences max. Keep it real.”</p>
+            <p class="quote">“Keep it real and tight: 1–2 sentences.”</p>
             <p class="quote-meta">— Name, Town NH · Project type</p>
           </article>
         </div>
 
         <div class="spacer-14"></div>
-        <a class="btn btn-outline" href="#contact">Get an Estimate</a>
-      </div>
-    </section>
-
-    <section id="faq" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>FAQ</h2>
-          <p>Quick answers to the questions that affect scope, pricing, and schedule.</p>
-        </div>
-
-        <div class="faq">
-          <details class="faq-item">
-            <summary>Do you handle permits and inspections?</summary>
-            <div class="faq-body">
-              <p>For projects that require permitting, we’ll outline what’s required during the walkthrough and coordinate the process as part of the scope.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Do you subcontract plumbing and electrical?</summary>
-            <div class="faq-body">
-              <p>Most remodels require licensed trades. If your project needs them, we’ll coordinate and schedule them as part of the plan.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>What information helps you estimate fastest?</summary>
-            <div class="faq-body">
-              <p>Your town/zip, rough budget range, desired start window, and a few photos of the existing space.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>How far out are you booking?</summary>
-            <div class="faq-body">
-              <p>It depends on scope and season. Include your desired start window in the estimate request and we’ll give you a realistic timeline.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Request an Estimate</h2>
-          <p>Tell us about the project. We’ll follow up to schedule a walkthrough or next steps.</p>
-        </div>
-
-        <form id="estimateForm" class="form" action="https://formspree.io/f/xeekojdo" method="POST">
-          <input type="hidden" name="source" value="Website Estimate Request" />
-          <input type="hidden" name="domain" value="sacco-construction.com" />
-          <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
-
-          <div class="grid2">
-            <label>
-              Full Name
-              <input name="name" type="text" required autocomplete="name" />
-            </label>
-            <label>
-              Email
-              <input name="email" type="email" required autocomplete="email" />
-            </label>
-          </div>
-
-          <div class="grid2">
-            <label>
-              Phone
-              <input name="phone" type="tel" required autocomplete="tel" />
-            </label>
-            <label>
-              Town / Zip
-              <input name="town_zip" type="text" required placeholder="e.g., Salem, NH 03079" />
-            </label>
-          </div>
-
-          <div class="grid3">
-            <label>
-              Project Type
-              <select name="project_type" required>
-                <option value="" disabled selected>Select one</option>
-                <option>Kitchens</option>
-                <option>Bathrooms</option>
-                <option>Finished basements</option
-
-
+        <a class="btn
