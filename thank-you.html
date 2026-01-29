@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Estimate Request Received | Sacco Construction</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://www.sacco-construction.com/thank-you.html" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTK4KXJPP"></script>
@@ -12,39 +16,76 @@
     gtag('js', new Date());
     gtag('config', 'G-WCTK4KXJPP');
   </script>
-
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f9fafb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .box {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
-      text-align: center;
-      max-width: 480px;
-    }
-    h1 {
-      color: #0f2a44;
-      margin-bottom: 12px;
-    }
-    p {
-      color: #555;
-    }
-  </style>
 </head>
+
 <body>
-  <div class="box">
-    <h1>Thank you!</h1>
-    <p>Your estimate request has been received.<br>
-    We’ll be in touch shortly.</p>
-  </div>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Sacco Construction home">
+        <img src="assets/LOGO.jpg" alt="Sacco Construction logo" class="logo" />
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="/" class="btn btn-outline">Back to Home</a>
+        <a href="tel:16033399116" class="btn btn-solid">Call 603-339-9116</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Thank you — request received.</h2>
+          <p>We’ll follow up within 1 business day. If you have photos, sending them now speeds up estimating.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Fastest next step</h3>
+            <p>Email photos and your address/town so we can prep before reaching out.</p>
+            <div class="spacer-10"></div>
+            <a class="btn btn-solid full" href="mailto:estimate@sacco-construction.com?subject=Photos%20for%20Estimate%20Request&body=Hi%20Sacco%20Construction%2C%0A%0AHere%20are%20photos%20for%20my%20estimate%20request.%0A%0ATown%2FZip%3A%0AProject%20Type%3A%0ATimeline%3A%0ABudget%20Range%3A%0A%0AThanks%2C">
+              Email Photos
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Need to talk sooner?</h3>
+            <p>Call and we’ll confirm next steps quickly.</p>
+            <div class="spacer-10"></div>
+            <a class="btn btn-outline full" href="tel:16033399116">Call 603-339-9116</a>
+          </article>
+
+          <article class="card">
+            <h3>Return to site</h3>
+            <p>Browse services, process, and prep questions before the walkthrough.</p>
+            <div class="spacer-10"></div>
+            <a class="btn btn-outline full" href="/#services">View Services</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Sacco Construction LLC. All rights reserved.</p>
+      <p><a href="tel:16033399116">603-339-9116</a> · <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Fire a conversion event on the thank-you page
+    try {
+      gtag('event', 'estimate_request_submitted', {
+        event_category: 'lead',
+        event_label: 'website_form',
+        value: 1
+      });
+    } catch (e) {}
+  </script>
 </body>
 </html>
