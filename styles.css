@@ -40,31 +40,32 @@ a:hover{opacity:.9}
   align-items:center;
   justify-content:space-between;
   gap:20px;
-  padding:16px 0;
+  padding:16px 0;                 /* big on load */
   transition: padding .18s ease;
 }
+
 .site-header.is-scrolled .header-inner{
-  padding:10px 0;
+  padding:10px 0;                 /* tighter on scroll */
 }
 
-/* Logo badge so a white logo works on a light site */
+/* Brand / Logo */
 .brand{
   display:inline-flex;
   align-items:center;
   gap:10px;
 }
 
+/* IMPORTANT: keep logo big, but not insane */
 .logo{
-  height:300px;       /* big on load */
+  height:120px;                   /* big on load */
   width:auto;
   display:block;
   transition: height .18s ease;
 }
+
 .site-header.is-scrolled .logo{
-  height:96px;        /* smaller on scroll */
+  height:78px;                    /* slightly smaller on scroll */
 }
-
-
 
 /* Nav */
 .nav{
@@ -78,10 +79,6 @@ a:hover{opacity:.9}
 .nav a{
   font-size:14px;
   color:var(--muted);
-}
-
-.nav a.btn{
-  color:#fff;
 }
 
 /* Hero */
@@ -187,7 +184,7 @@ h1{
   margin:0 0 8px;
   display:inline-block;
   padding-top:10px;
-  border-top:3px solid rgba(47,93,124,.55); /* thin steel blue top border */
+  border-top:3px solid rgba(47,93,124,.55);
 }
 
 .section-head p{
@@ -318,8 +315,10 @@ input:focus,select:focus,textarea:focus{
   font-size:14px;
   border:1px solid transparent;
   cursor:pointer;
+  text-decoration:none; /* important for <a> buttons */
 }
 
+/* Primary (steel blue) */
 .btn-solid{
   background:var(--accent);
   color:#fff;
@@ -329,8 +328,9 @@ input:focus,select:focus,textarea:focus{
   background:var(--accent2);
 }
 
+/* Outline (white background) */
 .btn-outline{
-  background:transparent;
+  background:#fff;
   border-color:var(--line);
   color:var(--text);
 }
@@ -339,6 +339,12 @@ input:focus,select:focus,textarea:focus{
   border-color:rgba(47,93,124,.45);
   box-shadow: 0 0 0 4px rgba(47,93,124,.10);
 }
+
+/* KEY FIX:
+   Only force white text on solid buttons in the nav,
+   NOT on every .btn (this was breaking your quote button color) */
+.nav a.btn-solid{ color:#fff; }
+.nav a.btn-outline{ color:var(--text); }
 
 .full{width:100%}
 
@@ -365,9 +371,8 @@ input:focus,select:focus,textarea:focus{
   .gallery{grid-template-columns:1fr}
   h1{font-size:36px}
   .nav{gap:10px}
-  .logo{height:58px}
-}
-@media (max-width: 900px){
-  .logo{height:110px;}
-  .site-header.is-scrolled .logo{height:74px;}
+
+  /* Logo sizing on mobile */
+  .logo{height:92px;}
+  .site-header.is-scrolled .logo{height:64px;}
 }
