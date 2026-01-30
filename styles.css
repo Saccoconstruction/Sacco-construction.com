@@ -577,14 +577,11 @@ input:focus,select:focus,textarea:focus{
   box-shadow:0 12px 28px rgba(2,6,23,.10);
 }
 
-/* Image sizing (THIS fixes blocky / ugly layout) */
 .gcard img{
   width:100%;
-  height:260px;
-  object-fit:cover;
-  object-position:center;
+  height:auto;
   display:block;
-  background:#f1f5f9;
+  border-bottom:1px solid var(--line);
 }
 
 /* Caption */
