@@ -38,13 +38,14 @@ a:hover{opacity:.92}
 }
 
 .header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
   padding:16px 0;
-  transition: padding .18s ease;
 }
+
+/* no padding animation on scroll */
+.site-header.is-scrolled .header-inner{
+  padding:16px 0;
+}
+
 
 .site-header.is-scrolled .header-inner{ padding:10px 0; }
 
@@ -56,10 +57,10 @@ a:hover{opacity:.92}
 }
 
 .logo{
-  height:120px;
+  height:180px;
   width:auto;
   display:block;
-  transition: height .18s ease;
+  transition: height .2s ease;
 }
 
 .site-header.is-scrolled .logo{ height:78px; }
