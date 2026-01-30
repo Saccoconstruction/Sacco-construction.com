@@ -21,11 +21,13 @@ html,body{
 }
 
 a{color:var(--accent2);text-decoration:none}
-a:hover{opacity:.9}
+a:hover{opacity:.92}
 
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
-/* Header */
+/* =========================
+   Header
+   ========================= */
 .site-header{
   position:sticky;
   top:0;
@@ -44,9 +46,7 @@ a:hover{opacity:.9}
   transition: padding .18s ease;
 }
 
-.site-header.is-scrolled .header-inner{
-  padding:10px 0;
-}
+.site-header.is-scrolled .header-inner{ padding:10px 0; }
 
 /* Brand / Logo */
 .brand{
@@ -62,9 +62,7 @@ a:hover{opacity:.9}
   transition: height .18s ease;
 }
 
-.site-header.is-scrolled .logo{
-  height:78px;
-}
+.site-header.is-scrolled .logo{ height:78px; }
 
 /* Nav */
 .nav{
@@ -80,9 +78,14 @@ a:hover{opacity:.9}
   color:var(--muted);
 }
 
-/* Hero */
+/* =========================
+   Hero
+   ========================= */
 .hero{
-  background: radial-gradient(1200px 520px at 15% 0%, rgba(47,93,124,.16) 0%, rgba(47,93,124,.06) 35%, #ffffff 70%);
+  background: radial-gradient(1200px 520px at 15% 0%,
+    rgba(47,93,124,.16) 0%,
+    rgba(47,93,124,.06) 35%,
+    #ffffff 70%);
   border-bottom:1px solid var(--line);
   padding:54px 0;
 }
@@ -172,11 +175,13 @@ h1{
   margin:14px 0;
 }
 
-/* Sections */
-.section{padding:54px 0}
-.section-alt{background:var(--bg2)}
+/* =========================
+   Sections
+   ========================= */
+.section{ padding:48px 0; }
+.section-alt{ background:var(--bg2); }
 
-.section-head{margin-bottom:18px}
+.section-head{ margin-bottom:14px; }
 
 .section-head h2{
   font-size:28px;
@@ -190,9 +195,12 @@ h1{
   margin:0;
   color:var(--muted);
   max-width:70ch;
+  line-height:1.6;
 }
 
-/* Cards */
+/* =========================
+   Cards
+   ========================= */
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -203,7 +211,7 @@ h1{
 .card{
   background:var(--card);
   border:1px solid var(--line);
-  border-radius:16px;
+  border-radius:18px;
   padding:16px;
   box-shadow: 0 6px 18px rgba(2,6,23,.05);
 }
@@ -236,12 +244,14 @@ h1{
 .about-card{
   background:var(--card);
   border:1px solid var(--line);
-  border-radius:16px;
+  border-radius:18px;
   padding:18px;
   box-shadow:var(--shadow);
 }
 
-/* ✅ Gallery */
+/* =========================
+   Gallery (FAILSAFE)
+   ========================= */
 .gallery-grid{
   display:flex;
   flex-direction:column;
@@ -249,18 +259,21 @@ h1{
   margin-top:18px;
 }
 
+.gallery-group{ margin-top: 6px; }
+
 .gallery-h{
   margin:0 0 10px;
-  font-size:16px;
+  font-size:18px;
   color:var(--text);
+  letter-spacing:.2px;
 }
 
-/* Gallery */
+/* 3-up grid on desktop, 1-up on mobile */
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap:16px;
-  margin-top:18px;
+  margin-top:12px;
 }
 
 .gcard{
@@ -268,27 +281,42 @@ h1{
   border:1px solid var(--line);
   border-radius:16px;
   overflow:hidden;
-  box-shadow: 0 6px 18px rgba(2,6,23,.05);
+  box-shadow: 0 6px 18px rgba(2,6,23,.06);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
+.gcard:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(2,6,23,.12);
+  border-color: rgba(47,93,124,.25);
+}
+
+/* ✅ This is what prevents “dog ass” images:
+   consistent tile shape + cover fit */
 .gcard img{
   width:100%;
-  height:auto;
-  display:block;
-
-  /* KEY FIX: consistent tile shape without stretching */
   aspect-ratio: 4 / 3;
-  object-fit:cover;
+  object-fit: cover;
+  object-position: center;
+  display:block;
+  background:#f1f5f9;
 }
 
 .gcard figcaption{
   padding:10px 12px;
   font-size:13px;
   color:var(--muted);
-  line-height:1.4;
+  border-top:1px solid var(--line);
+  line-height:1.35;
 }
 
-/* Keep placeholders looking decent if you still use them anywhere */
+/* Divider between project groups */
+.gallery-group + .gallery-group{
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+
+/* If you still use placeholders anywhere */
 .ph{
   background:#ffffff;
   border:1px dashed #cbd5e1;
@@ -303,12 +331,13 @@ h1{
   padding:10px;
 }
 
-
-/* Form */
+/* =========================
+   Forms
+   ========================= */
 .form{
   background:var(--card);
   border:1px solid var(--line);
-  border-radius:16px;
+  border-radius:18px;
   padding:18px;
   box-shadow:var(--shadow);
   margin-top:18px;
@@ -344,7 +373,9 @@ input:focus,select:focus,textarea:focus{
   gap:12px;
 }
 
-/* Buttons */
+/* =========================
+   Buttons
+   ========================= */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -379,9 +410,56 @@ input:focus,select:focus,textarea:focus{
 .nav a.btn-solid{ color:#fff; }
 .nav a.btn-outline{ color:var(--text); }
 
-.full{width:100%}
+.full{ width:100%; }
 
-/* Footer */
+/* =========================
+   Testimonials (CTA + placeholder)
+   ========================= */
+.testimonial-cta{
+  margin-top:18px;
+  background:#ffffff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+  box-shadow: var(--shadow);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.testimonial-cta h3{
+  margin:0 0 6px;
+  font-size:16px;
+  color: var(--text);
+}
+
+.testimonial-cta p{
+  margin:0;
+  color: var(--muted);
+  max-width:70ch;
+}
+
+.testimonial-placeholder{
+  margin-top:16px;
+  background:#ffffff;
+  border:1px dashed var(--line);
+  border-radius:16px;
+  padding:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.testimonial-placeholder p{
+  margin:0;
+  max-width:70ch;
+}
+
+/* =========================
+   Footer
+   ========================= */
 .footer{
   border-top:1px solid var(--line);
   padding:22px 0;
@@ -397,7 +475,9 @@ input:focus,select:focus,textarea:focus{
   font-size:13px;
 }
 
-/* ✅ Lightbox */
+/* =========================
+   Lightbox
+   ========================= */
 .lightbox{
   position:fixed;
   inset:0;
@@ -446,210 +526,28 @@ input:focus,select:focus,textarea:focus{
 
 .lightbox-btn:hover{ background:rgba(255,255,255,.18); }
 
-/* Responsive */
+/* =========================
+   Responsive
+   ========================= */
 @media (max-width: 900px){
   .hero-grid,.split{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr}
   h1{font-size:36px}
   .nav{gap:10px}
-
   .logo{height:92px;}
   .site-header.is-scrolled .logo{height:64px;}
 
-  .gcard img{ aspect-ratio: 16 / 10; }
-}
-/* =========================
-   POLISH PACK (Gallery + general spacing)
-   Paste at bottom of styles.css
-   ========================= */
-
-/* Slightly tighter overall section rhythm */
-.section{ padding: 48px 0; }
-.section-head{ margin-bottom: 14px; }
-.section-head p{ line-height: 1.6; }
-
-/* Make cards feel more premium */
-.card, .form, .about-card, .hero-card{
-  border-radius: 18px;
-}
-
-/* -------------------------
-   GALLERY POLISH
-   ------------------------- */
-
-/* If your gallery wrapper is .gallery (from your original CSS),
-   keep it but make it more consistent and tighter. */
-.gallery{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap:16px;                 /* tighter, cleaner */
-  margin-top:16px;
-}
-
-@media (max-width: 900px){
-  .gallery{ grid-template-columns: 1fr; }
-}
-
-/* Make each image “tile” feel like a real component */
-.gallery figure,
-.gallery .gcard,
-.gallery .tile{
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(2,6,23,.05);
-  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-}
-
-/* Subtle hover lift for polish */
-.gallery figure:hover,
-.gallery .gcard:hover,
-.gallery .tile:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(2,6,23,.10);
-  border-color: rgba(47,93,124,.25);
-}
-
-/* The single biggest “looks pro” change:
-   consistent tile height + no stretching */
-.gallery img,
-.gallery .gimg{
-  width:100%;
-  height:260px;             /* adjust 240–320 to taste */
-  object-fit: cover;
-  object-position: center;
-  display:block;
-  background: #f1f5f9;       /* prevents ugly white flash while loading */
-}
-
-/* Captions tighter + cleaner */
-.gallery figcaption,
-.gallery .gcap{
-  padding:10px 12px;
-  font-size:13px;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-  line-height: 1.35;
-}
-
-/* Optional: make “Before / After” labels pop slightly */
-.gallery .tag{
-  display:inline-block;
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:.02em;
-  padding:6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(47,93,124,.22);
-  background: rgba(47,93,124,.06);
-  color: var(--accent2);
-}
-
-/* Optional: tighter headings inside the Gallery section */
-#gallery h3{
-  margin: 26px 0 10px;
-}
-
-#gallery h4{
-  margin: 12px 0 10px;
-  color: var(--text);
-}
-/* =========================
-   Gallery Polish
-   ========================= */
-
-.gallery-group{
-  margin-top: 28px;
-}
-
-.gallery-h{
-  font-size: 18px;
-  margin: 0 0 12px;
-  color: #0f172a;
-  letter-spacing: .2px;
-}
-
-.gallery{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap:16px;
-}
-
-@media (max-width: 900px){
-  .gallery{ grid-template-columns: 1fr; }
-}
-
-/* Gallery card */
-.gcard{
-  background:#ffffff;
-  border:1px solid #e2e8f0;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 6px 18px rgba(2,6,23,.05);
-  transition:transform .15s ease, box-shadow .15s ease;
-}
-
-.gcard:hover{
-  transform:translateY(-2px);
-  box-shadow:0 14px 34px rgba(2,6,23,.12);
-}
-
-.gcard img{
-  width:100%;
-  height:auto;
-  display:block;
-  border-bottom:1px solid var(--line);
-}
-
-/* Caption */
-.gcard figcaption{
-  padding:10px 12px;
-  font-size:13px;
-  color:#475569;
-  border-top:1px solid #e2e8f0;
-  line-height:1.35;
-}
-
-/* Space between project sections */
-.gallery-group + .gallery-group{
-  padding-top:24px;
-  border-top:1px solid #e2e8f0;
-}
-/* Testimonial CTA block */
-.testimonial-cta{
-  margin-top:18px;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: var(--shadow);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-}
-
-.testimonial-cta h3{
-  margin:0 0 6px;
-  font-size:16px;
-  color: var(--text);
-}
-
-.testimonial-cta p{
-  margin:0;
-  color: var(--muted);
-  max-width:70ch;
-}
-
-@media (max-width: 900px){
-  .testimonial-cta{
+  .testimonial-cta,
+  .testimonial-placeholder{
     flex-direction:column;
     align-items:stretch;
   }
-  .testimonial-cta a{
+  .testimonial-cta a,
+  .testimonial-placeholder a{
     width:100%;
   }
-}
 
+  /* Slightly wider tiles on mobile */
+  .gcard img{ aspect-ratio: 16 / 10; }
+}
