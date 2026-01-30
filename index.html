@@ -405,8 +405,16 @@
       if (!header) return;
 
       const onScroll = () => {
-        if (window.scrollY > 20) header.classList.add("is-scrolled");
-        else header.classList.remove("is-scrolled");
+        let lastState = false;
+
+const onScroll = () => {
+  const scrolled = window.scrollY > 60;
+  if (scrolled !== lastState) {
+    header.classList.toggle("is-scrolled", scrolled);
+    lastState = scrolled;
+  }
+};
+
       };
 
       window.addEventListener("scroll", onScroll, { passive: true });
