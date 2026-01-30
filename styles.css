@@ -537,4 +537,68 @@ input:focus,select:focus,textarea:focus{
   margin: 12px 0 10px;
   color: var(--text);
 }
+/* =========================
+   Gallery Polish
+   ========================= */
+
+.gallery-group{
+  margin-top: 28px;
+}
+
+.gallery-h{
+  font-size: 18px;
+  margin: 0 0 12px;
+  color: #0f172a;
+  letter-spacing: .2px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:16px;
+}
+
+@media (max-width: 900px){
+  .gallery{ grid-template-columns: 1fr; }
+}
+
+/* Gallery card */
+.gcard{
+  background:#ffffff;
+  border:1px solid #e2e8f0;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(2,6,23,.05);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+
+.gcard:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(2,6,23,.10);
+}
+
+/* Image sizing (THIS fixes blocky / ugly layout) */
+.gcard img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  background:#f1f5f9;
+}
+
+/* Caption */
+.gcard figcaption{
+  padding:10px 12px;
+  font-size:13px;
+  color:#475569;
+  border-top:1px solid #e2e8f0;
+  line-height:1.35;
+}
+
+/* Space between project sections */
+.gallery-group + .gallery-group{
+  padding-top:24px;
+  border-top:1px solid #e2e8f0;
+}
 
