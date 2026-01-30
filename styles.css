@@ -255,35 +255,54 @@ h1{
   color:var(--text);
 }
 
+/* Gallery */
 .gallery{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:16px;
+  margin-top:18px;
 }
 
 .gcard{
-  margin:0;
-  background:#fff;
+  background:var(--card);
   border:1px solid var(--line);
-  border-radius:14px;
+  border-radius:16px;
   overflow:hidden;
   box-shadow: 0 6px 18px rgba(2,6,23,.05);
 }
 
 .gcard img{
   width:100%;
+  height:auto;
   display:block;
+
+  /* KEY FIX: consistent tile shape without stretching */
   aspect-ratio: 4 / 3;
-  object-fit: cover;
-  cursor:pointer;
+  object-fit:cover;
 }
 
 .gcard figcaption{
-  padding:10px 10px;
+  padding:10px 12px;
   font-size:13px;
   color:var(--muted);
-  border-top:1px solid var(--line);
+  line-height:1.4;
 }
+
+/* Keep placeholders looking decent if you still use them anywhere */
+.ph{
+  background:#ffffff;
+  border:1px dashed #cbd5e1;
+  border-radius:14px;
+  min-height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#64748b;
+  font-size:13px;
+  text-align:center;
+  padding:10px;
+}
+
 
 /* Form */
 .form{
