@@ -9,9 +9,9 @@
   --accent2:#1f3f54;
   --shadow: 0 10px 30px rgba(2,6,23,.08);
 
-  /* Header sizing: header height == logo height */
-  --header-big: 250px;     /* BIG state (matches your preferred logo height) */
-  --header-small: 90px;    /* SCROLLED state */
+  /* HEADER: single source of truth */
+  --header-big: 170px;     /* BIG logo/header height */
+  --header-small: 90px;    /* SCROLLED logo/header height */
   --header-h: var(--header-big);
 }
 
@@ -31,16 +31,19 @@ a:hover{ opacity:.92; }
 .container{ max-width:1100px; margin:0 auto; padding:0 20px; }
 
 /* =========================
-   Header (single source of truth)
+   Header
    ========================= */
 .site-header{
   position: sticky;
   top: 0;
   z-index: 50;
-  height: var(--header-h);              /* THE RULE */
+
+  /* THE RULE: header height is controlled here */
+  height: var(--header-h);
   background: rgba(255,255,255,.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
+
   transition: height .18s ease, box-shadow .18s ease;
 }
 
@@ -50,12 +53,14 @@ a:hover{ opacity:.92; }
 }
 
 .header-inner{
-  height: 100%;                         /* matches header height */
+  height: 100%;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:20px;
-  padding: 0;                           /* no vertical padding (prevents mismatch) */
+
+  /* No vertical padding; prevents header from being taller than logo */
+  padding: 0;
 }
 
 .brand{
@@ -65,7 +70,7 @@ a:hover{ opacity:.92; }
 }
 
 .logo{
-  height: 100%;                         /* logo height == header height */
+  height: 100%; /* logo == header height */
   width: auto;
   display:block;
 }
@@ -84,7 +89,7 @@ a:hover{ opacity:.92; }
   color:var(--muted);
 }
 
-/* Mobile nav toggle */
+/* Mobile nav button (hidden on desktop) */
 .nav-toggle{
   display:none;
   height:44px;
@@ -286,6 +291,7 @@ h1{
   letter-spacing:.2px;
 }
 
+/* 3-up on desktop */
 .gallery{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -300,6 +306,7 @@ h1{
   overflow:hidden;
   box-shadow: 0 6px 18px rgba(2,6,23,.06);
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  cursor: zoom-in;
 }
 
 .gcard:hover{
@@ -366,6 +373,11 @@ input:focus,select:focus,textarea:focus{
   box-shadow: 0 0 0 4px rgba(47,93,124,.12);
 }
 
+input[type="file"]{
+  padding:10px;
+  background:#fff;
+}
+
 .grid2{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -383,6 +395,7 @@ input:focus,select:focus,textarea:focus{
   margin-top:6px;
   font-size:12px;
   color:var(--muted);
+  line-height:1.4;
 }
 
 /* =========================
@@ -542,13 +555,19 @@ input:focus,select:focus,textarea:focus{
    Responsive
    ========================= */
 @media (max-width: 900px){
+  /* Smaller header on mobile so it doesn’t eat the screen */
   :root{
     --header-big: 92px;
     --header-small: 64px;
   }
 
-  .nav-toggle{ display:inline-flex; align-items:center; justify-content:center; }
+  .nav-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
 
+  /* Mobile nav becomes a dropdown panel */
   .nav{
     position: fixed;
     left: 0;
