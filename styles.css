@@ -10,7 +10,7 @@
   --shadow: 0 10px 30px rgba(2,6,23,.08);
 
   /* Header sizing: header height == logo height */
-  --header-big: 170px;     /* BIG state (matches your preferred logo height) */
+  --header-big: 250px;     /* BIG state (matches your preferred logo height) */
   --header-small: 90px;    /* SCROLLED state */
   --header-h: var(--header-big);
 }
