@@ -1,572 +1,588 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Sacco Construction is a Southern New Hampshire interior remodeling contractor specializing in kitchens, bathrooms, finished basements, full interior renovations, decks, and light commercial work." />
-  <title>Sacco Construction | Interior Remodeling Contractor in Southern NH</title>
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTK4KXJPP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WCTK4KXJPP');
-  </script>
-</head>
-
-<body>
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Sacco Construction home">
-        <img src="assets/LOGO.jpg" alt="Sacco Construction logo" class="logo" />
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
-        ☰
-      </button>
-
-      <nav class="nav" id="siteNav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="/testimonial.html">Leave a Testimonial</a>
-        <a href="#contact" class="btn btn-outline">Request an Estimate</a>
-        <a href="tel:16033399116" class="btn btn-solid">Call 603-339-9116</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Southern New Hampshire</p>
-          <h1>Premium Interior Remodeling &amp; Construction</h1>
-          <p class="subhead">
-            Kitchens, bathrooms, finished basements, full interior remodeling, decks, and light commercial work —
-            built with precision, clear communication, and pride.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn btn-solid" href="#contact">Request an Estimate</a>
-            <a class="btn btn-outline" href="tel:16033399116">Call 603-339-9116</a>
-          </div>
-
-          <ul class="trust">
-            <li>Owner-operated</li>
-            <li>Clean job sites</li>
-            <li>Professional scheduling &amp; updates</li>
-          </ul>
-        </div>
-
-        <div class="hero-card">
-          <h2>Quick Estimate Intake</h2>
-          <p class="small">
-            Tell us what you’re planning and we’ll follow up promptly.
-          </p>
-          <a class="btn btn-solid full" href="#contact">Start Estimate Request</a>
-          <div class="divider"></div>
-          <p class="small muted">
-            Or email: <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Services</h2>
-          <p>High-quality interior work for homeowners and select commercial clients.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Kitchens</h3>
-            <p>Layout improvements, cabinetry, trim, flooring, lighting, and finishes — executed cleanly and efficiently.</p>
-          </article>
-
-          <article class="card">
-            <h3>Bathrooms</h3>
-            <p>Functional upgrades with a premium finish: tile, vanities, fixtures, ventilation, and detail work.</p>
-          </article>
-
-          <article class="card">
-            <h3>Finished Basements</h3>
-            <p>Comfortable, code-conscious basements built for real use: framing, insulation, ceilings, and trim.</p>
-          </article>
-
-          <article class="card">
-            <h3>Decks</h3>
-            <p>New decks, rebuilds, and upgrades — durable framing, clean lines, and a finished look that lasts.</p>
-          </article>
-
-          <article class="card">
-            <h3>All Interior Remodeling</h3>
-            <p>From single rooms to full interior refreshes — consistent craftsmanship, clear scope, and clean punch lists.</p>
-          </article>
-
-          <article class="card">
-            <h3>Light Commercial</h3>
-            <p>Tenant improvements and interior upgrades with professional scheduling and communication.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section section-alt">
-      <div class="container split">
-        <div>
-          <div class="section-head">
-            <h2>Built like it should be.</h2>
-            <p>
-              Sacco Construction focuses on premium interior remodeling, decks, and select light commercial work in Southern New Hampshire.
-              We operate with a simple standard: <strong>do it right, communicate clearly, and leave the site clean</strong>.
-            </p>
-          </div>
-
-          <ul class="bullets">
-            <li>Clear scope, realistic scheduling</li>
-            <li>Respect for your home and your time</li>
-            <li>Clean finishes and tight detail work</li>
-          </ul>
-
-          <div class="service-area">
-            <h3>Service Area</h3>
-            <p>
-              Serving Southern New Hampshire, including Rockingham &amp; Hillsborough County communities such as:
-              <strong>Salem, Windham, Derry, Londonderry, Pelham, Hudson, Nashua, Merrimack, Bedford, Manchester, Auburn,
-              Chester, Hampstead, Atkinson, Plaistow, Kingston</strong> — and surrounding towns.
-            </p>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <h3>Get in touch</h3>
-          <p class="small">For estimates and new project requests:</p>
-          <p class="big">
-            <a href="tel:16033399116">603-339-9116</a><br/>
-            <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
-          </p>
-          <a class="btn btn-solid full" href="#contact">Request an Estimate</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Project Gallery</h2>
-          <p>Before &amp; after progress shots — plus detail photos that show finish quality. Click any image to enlarge.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-group">
-            <h3 class="gallery-h">Finished Basement — Salem, NH</h3>
-            <div class="gallery">
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-before-01.jpeg" alt="Basement remodel before in Salem NH" loading="lazy" decoding="async">
-                <figcaption>Before</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-after-01.jpeg" alt="Basement remodel after in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-after-02.jpeg" alt="Finished basement after photo angle 2 in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 2</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-after-03.jpeg" alt="Finished basement after photo angle 3 in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 3</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-after-04.jpeg" alt="Finished basement after photo angle 4 in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 4</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-after-05.jpeg" alt="Finished basement after photo angle 5 in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 5</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/basement-salem-nh-after-06.jpeg" alt="Finished basement after photo angle 6 in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 6</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="gallery-group">
-            <h3 class="gallery-h">Bathroom — Atkinson, NH</h3>
-            <div class="gallery">
-              <figure class="gcard">
-                <img src="assets/bathroom-atkinson-nh-before-01.jpeg" alt="Bathroom remodel before in Atkinson NH" loading="lazy" decoding="async">
-                <figcaption>Before</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/bathroom-atkinson-nh-after-01.jpeg" alt="Bathroom remodel after in Atkinson NH" loading="lazy" decoding="async">
-                <figcaption>After</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="gallery-group">
-            <h3 class="gallery-h">Commercial Office — Derry, NH</h3>
-            <div class="gallery">
-              <figure class="gcard">
-                <img src="assets/commercial-derry-nh-office-before-01.jpeg" alt="Commercial office before in Derry NH" loading="lazy" decoding="async">
-                <figcaption>Before</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/commercial-derry-nh-office-after-01.jpeg" alt="Commercial office after in Derry NH" loading="lazy" decoding="async">
-                <figcaption>After</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="gallery-group">
-            <h3 class="gallery-h">Deck — Salem, NH</h3>
-            <div class="gallery">
-              <figure class="gcard">
-                <img src="assets/deck-salem-nh-after-01.jpeg" alt="Deck project photo in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 1</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/deck-salem-nh-after-02.jpeg" alt="Deck project photo angle 2 in Salem NH" loading="lazy" decoding="async">
-                <figcaption>After — angle 2</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="gallery-group">
-            <h3 class="gallery-h">Kitchen &amp; Detail Work</h3>
-            <div class="gallery">
-              <figure class="gcard">
-                <img src="assets/kitchen-salem-nh-01-detail-01.jpeg" alt="Kitchen finish detail in Salem NH" loading="lazy" decoding="async">
-                <figcaption>Kitchen detail</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/kitchen-Salem-nh-02-after-02.jpeg" alt="Kitchen after photo in Salem NH" loading="lazy" decoding="async">
-                <figcaption>Kitchen — After</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/kitchen-salem-nh-02before-02.jpeg" alt="Kitchen before photo in Salem NH" loading="lazy" decoding="async">
-                <figcaption>Kitchen — Before</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/detail-danville-nh-builtin-01.jpeg" alt="Built-in detail photo in Danville NH" loading="lazy" decoding="async">
-                <figcaption>Built-in detail</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/detail-deck-salem-nh-01.jpeg" alt="Deck detail photo in Salem NH" loading="lazy" decoding="async">
-                <figcaption>Deck detail</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/detail-windham-nh-accentwall-after-01.jpeg" alt="Accent wall after in Windham NH" loading="lazy" decoding="async">
-                <figcaption>Accent wall — After</figcaption>
-              </figure>
-              <figure class="gcard">
-                <img src="assets/detail-windham-nh-accentwall-before-01.jpeg" alt="Accent wall before in Windham NH" loading="lazy" decoding="async">
-                <figcaption>Accent wall — Before</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Client Feedback placeholder -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Client Feedback</h2>
-          <p>
-            We’re currently collecting testimonials from recent projects.
-            Client remarks will be added here as they come in.
-          </p>
-        </div>
-
-        <div class="testimonial-placeholder">
-          <p class="muted">
-            If we’ve worked together before, we’d really appreciate a short testimonial.
-          </p>
-          <a class="btn btn-outline" href="/testimonial.html">Leave a Testimonial</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Request an Estimate</h2>
-          <p>Tell us about the project. We’ll follow up to schedule a walkthrough or next steps.</p>
-        </div>
-
-        <div class="testimonial-cta">
-          <div>
-            <h3>Past Client?</h3>
-            <p class="small">
-              If we’ve worked together before, a short testimonial helps homeowners feel confident and helps us keep improving.
-            </p>
-          </div>
-          <a class="btn btn-outline" href="/testimonial.html">Leave a Testimonial</a>
-        </div>
-
-        <form id="estimateForm" class="form" action="https://formspree.io/f/xeekojdo" method="POST">
-          <input type="hidden" name="source" value="Website Estimate Request" />
-          <input type="hidden" name="domain" value="sacco-construction.com" />
-          <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
-
-          <div class="grid2">
-            <label>
-              Name *
-              <input name="name" type="text" autocomplete="name" required />
-            </label>
-            <label>
-              Email *
-              <input name="email" type="email" autocomplete="email" required />
-            </label>
-          </div>
-
-          <div class="grid2">
-            <label>
-              Phone Number *
-              <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
-            </label>
-            <label>
-              Town / ZIP Code *
-              <input name="location" type="text" autocomplete="postal-code" required />
-            </label>
-          </div>
-
-          <div class="grid3">
-            <label>
-              Project Type *
-              <select name="project_type" required>
-                <option value="" disabled selected>Select one</option>
-                <option>Kitchen Remodel</option>
-                <option>Bathroom Remodel</option>
-                <option>Finished Basement</option>
-                <option>Full Interior Renovation</option>
-                <option>Deck</option>
-                <option>Light Commercial</option>
-                <option>Other</option>
-              </select>
-            </label>
-
-            <label>
-              Budget Range *
-              <select name="budget_range" required>
-                <option value="" disabled selected>Select one</option>
-                <option>Under $10,000</option>
-                <option>$10,000 – $25,000</option>
-                <option>$25,000 – $50,000</option>
-                <option>$50,000 – $100,000</option>
-                <option>$100,000+</option>
-                <option>Not Sure Yet</option>
-              </select>
-            </label>
-
-            <label>
-              Start Window *
-              <select name="start_window" required>
-                <option value="" disabled selected>Select one</option>
-                <option>ASAP</option>
-                <option>1–3 months</option>
-                <option>3–6 months</option>
-                <option>6+ months</option>
-                <option>Just planning / pricing</option>
-              </select>
-            </label>
-          </div>
-
-          <label>
-            Message *
-            <textarea name="message" rows="7" placeholder="Scope, dimensions, finishes, timeline, and anything that matters." required></textarea>
-          </label>
-
-          <!-- Uploads (Uploadcare stores files, submits file URLs in the form) -->
-          <label>
-            Upload photos / documents (optional)
-            <input
-              type="hidden"
-              role="uploadcare-uploader"
-              name="uploads"
-              data-multiple="true"
-              data-public-key="YOUR_UPLOADCARE_PUBLIC_KEY"
-            />
-            <span class="help">Upload images or PDFs. Links will be included with your request.</span>
-          </label>
-
-          <button class="btn btn-solid" type="submit">Send Request</button>
-
-          <p class="small muted">
-            Prefer email? <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
-            &nbsp;|&nbsp; Phone: <a href="tel:16033399116">603-339-9116</a>
-          </p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="y"></span> Sacco Construction LLC. All rights reserved.</p>
-      <p>
-        <a href="tel:16033399116">603-339-9116</a> ·
-        <a href="mailto:estimate@sacco-construction.com">estimate@sacco-construction.com</a>
-      </p>
-    </div>
-  </footer>
-
-  <!-- Uploadcare -->
-  <script>
-    UPLOADCARE_PUBLIC_KEY = "YOUR_UPLOADCARE_PUBLIC_KEY";
-  </script>
-  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-
-  <!-- Header shrink + mobile nav -->
-  <script>
-  (() => {
-    const header = document.getElementById("siteHeader");
-    const navToggle = document.getElementById("navToggle");
-    if (!header) return;
-
-    // Mobile nav toggle
-    if (navToggle) {
-      navToggle.addEventListener("click", () => {
-        const isOpen = header.classList.toggle("nav-open");
-        navToggle.setAttribute("aria-expanded", String(isOpen));
-      });
-    }
-
-    // Smooth shrink on scroll
-    let ticking = false;
-    const SCROLL_Y = 12;
-
-    function update() {
-      header.classList.toggle("is-scrolled", window.scrollY > SCROLL_Y);
-      ticking = false;
-    }
-
-    function onScroll() {
-      if (!ticking) {
-        window.requestAnimationFrame(update);
-        ticking = true;
-      }
-    }
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    update();
-  })();
-  </script>
-
-  <!-- Year in footer -->
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-
-  <!-- Formspree AJAX submit + redirect -->
-  <script>
-    (function () {
-      const form = document.getElementById("estimateForm");
-      if (!form) return;
-
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
-        const originalText = submitBtn ? submitBtn.textContent : "";
-
-        try {
-          if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Sending...";
-          }
-
-          const formData = new FormData(form);
-
-          const res = await fetch(form.action, {
-            method: "POST",
-            body: formData,
-            headers: { "Accept": "application/json" }
-          });
-
-          if (res.ok) {
-            window.location.href = "/thank-you.html";
-            return;
-          }
-
-          let msg = "Something went wrong submitting the form. Please try again or call 603-339-9116.";
-          try {
-            const data = await res.json();
-            if (data && data.errors && data.errors.length) {
-              msg = data.errors.map(e => e.message).join(" ");
-            }
-          } catch (_) {}
-
-          alert(msg);
-        } catch (err) {
-          alert("Network error. Please try again or call 603-339-9116.");
-        } finally {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText || "Submit";
-          }
-        }
-      });
-    })();
-  </script>
-
-  <!-- Simple lightbox for gallery -->
-  <script>
-    (function(){
-      const imgs = Array.from(document.querySelectorAll(".gcard img"));
-      if(!imgs.length) return;
-
-      const lb = document.createElement("div");
-      lb.className = "lightbox";
-      lb.innerHTML = `
-        <div class="lightbox-inner">
-          <img class="lightbox-img" alt="">
-          <div class="lightbox-bar">
-            <div class="lightbox-cap"></div>
-            <button class="lightbox-btn" type="button">Close</button>
-          </div>
-        </div>
-      `;
-      document.body.appendChild(lb);
-
-      const lbImg = lb.querySelector(".lightbox-img");
-      const cap = lb.querySelector(".lightbox-cap");
-      const btn = lb.querySelector(".lightbox-btn");
-
-      function open(src, text){
-        lbImg.src = src;
-        lbImg.alt = text || "Project photo";
-        cap.textContent = text || "";
-        lb.classList.add("is-open");
-        document.body.style.overflow = "hidden";
-      }
-
-      function close(){
-        lb.classList.remove("is-open");
-        document.body.style.overflow = "";
-        lbImg.src = "";
-      }
-
-      imgs.forEach(img => {
-        img.addEventListener("click", () => open(img.src, img.alt));
-      });
-
-      lb.addEventListener("click", (e) => { if(e.target === lb) close(); });
-      btn.addEventListener("click", close);
-      document.addEventListener("keydown", (e) => { if(e.key === "Escape") close(); });
-    })();
-  </script>
-</body>
-</html>
+:root{
+  --bg:#ffffff;
+  --bg2:#f6f8fb;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --line:#e2e8f0;
+  --accent:#2f5d7c;
+  --accent2:#1f3f54;
+  --shadow: 0 10px 30px rgba(2,6,23,.08);
+
+  /* Header sizing: header height == logo height */
+  --header-big: 170px;     /* BIG state (matches your preferred logo height) */
+  --header-small: 90px;    /* SCROLLED state */
+  --header-h: var(--header-big);
+}
+
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+a{ color:var(--accent2); text-decoration:none; }
+a:hover{ opacity:.92; }
+
+.container{ max-width:1100px; margin:0 auto; padding:0 20px; }
+
+/* =========================
+   Header (single source of truth)
+   ========================= */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-h);              /* THE RULE */
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  transition: height .18s ease, box-shadow .18s ease;
+}
+
+.site-header.is-scrolled{
+  --header-h: var(--header-small);
+  box-shadow: 0 8px 26px rgba(2,6,23,.10);
+}
+
+.header-inner{
+  height: 100%;                         /* matches header height */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding: 0;                           /* no vertical padding (prevents mismatch) */
+}
+
+.brand{
+  height: 100%;
+  display:inline-flex;
+  align-items:center;
+}
+
+.logo{
+  height: 100%;                         /* logo height == header height */
+  width: auto;
+  display:block;
+}
+
+/* Nav */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.nav a{
+  font-size:14px;
+  color:var(--muted);
+}
+
+/* Mobile nav toggle */
+.nav-toggle{
+  display:none;
+  height:44px;
+  width:44px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-weight:900;
+  cursor:pointer;
+}
+
+/* =========================
+   Hero
+   ========================= */
+.hero{
+  background: radial-gradient(1200px 520px at 15% 0%,
+    rgba(47,93,124,.16) 0%,
+    rgba(47,93,124,.06) 35%,
+    #ffffff 70%);
+  border-bottom:1px solid var(--line);
+  padding:54px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1.4fr .9fr;
+  gap:26px;
+  align-items:start;
+}
+
+.eyebrow{
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-size:12px;
+  margin:0 0 10px;
+  font-weight:800;
+}
+
+h1{
+  font-size:44px;
+  line-height:1.05;
+  margin:0 0 12px;
+  color:var(--text);
+}
+
+.subhead{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.7;
+  margin:0 0 18px;
+  max-width:58ch;
+}
+
+.cta-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:10px 0 12px;
+}
+
+.trust{
+  list-style:none;
+  padding:0;
+  margin:14px 0 0;
+  color:var(--muted);
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.trust li{
+  border-left:2px solid var(--line);
+  padding-left:10px;
+}
+
+/* Hero card */
+.hero-card{
+  background:linear-gradient(180deg, #ffffff, #f7fafc);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+
+.hero-card h2{ margin:0 0 8px; font-size:18px; color:var(--text); }
+
+.small{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.5;
+  margin:0;
+}
+
+.big{
+  font-size:16px;
+  line-height:1.6;
+  margin:10px 0 14px;
+}
+
+.muted{ color:var(--muted); }
+
+.divider{
+  height:1px;
+  background:var(--line);
+  margin:14px 0;
+}
+
+/* =========================
+   Sections
+   ========================= */
+.section{ padding:48px 0; }
+.section-alt{ background:var(--bg2); }
+
+.section-head{ margin-bottom:14px; }
+
+.section-head h2{
+  font-size:28px;
+  margin:0 0 8px;
+  display:inline-block;
+  padding-top:10px;
+  border-top:3px solid rgba(47,93,124,.55);
+}
+
+.section-head p{
+  margin:0;
+  color:var(--muted);
+  max-width:70ch;
+  line-height:1.6;
+}
+
+/* =========================
+   Cards
+   ========================= */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  box-shadow: 0 6px 18px rgba(2,6,23,.05);
+}
+
+.card h3{ margin:0 0 8px; font-size:16px; color:var(--text); }
+.card p{ margin:0; color:var(--muted); line-height:1.6; }
+
+/* Split section */
+.split{
+  display:grid;
+  grid-template-columns:1.3fr .9fr;
+  gap:18px;
+  align-items:start;
+}
+
+.bullets{
+  margin:14px 0 0;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.service-area{
+  margin-top:18px;
+  border-top:1px solid var(--line);
+  padding-top:14px;
+}
+
+.service-area h3{ margin:0 0 6px; font-size:16px; color:var(--text); }
+
+.about-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+
+/* =========================
+   Gallery
+   ========================= */
+.gallery-grid{
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+  margin-top:18px;
+}
+
+.gallery-group{ margin-top:6px; }
+
+.gallery-h{
+  margin:0 0 10px;
+  font-size:18px;
+  color:var(--text);
+  letter-spacing:.2px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:16px;
+  margin-top:12px;
+}
+
+.gcard{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(2,6,23,.06);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.gcard:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(2,6,23,.12);
+  border-color: rgba(47,93,124,.25);
+}
+
+.gcard img{
+  width:100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display:block;
+  background:#f1f5f9;
+}
+
+.gcard figcaption{
+  padding:10px 12px;
+  font-size:13px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  line-height:1.35;
+}
+
+.gallery-group + .gallery-group{
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+
+/* =========================
+   Forms
+   ========================= */
+.form{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+  box-shadow:var(--shadow);
+  margin-top:18px;
+}
+
+label{
+  display:block;
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+
+input,select,textarea{
+  width:100%;
+  margin-top:6px;
+  border-radius:12px;
+  border:1px solid #cbd5e1;
+  background:#ffffff;
+  color:var(--text);
+  padding:12px 12px;
+  font-size:14px;
+  outline:none;
+}
+
+input:focus,select:focus,textarea:focus{
+  border-color:rgba(47,93,124,.65);
+  box-shadow: 0 0 0 4px rgba(47,93,124,.12);
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+
+.help{
+  display:block;
+  margin-top:6px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  padding:10px 14px;
+  font-weight:800;
+  font-size:14px;
+  border:1px solid transparent;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.btn-solid{
+  background:var(--accent);
+  color:#fff;
+}
+
+.btn-solid:hover{ background:var(--accent2); }
+
+.btn-outline{
+  background:#fff;
+  border-color:var(--line);
+  color:var(--text);
+}
+
+.btn-outline:hover{
+  border-color:rgba(47,93,124,.45);
+  box-shadow: 0 0 0 4px rgba(47,93,124,.10);
+}
+
+.nav a.btn-solid{ color:#fff; }
+.nav a.btn-outline{ color:var(--text); }
+
+.full{ width:100%; }
+
+/* =========================
+   Testimonials
+   ========================= */
+.testimonial-cta{
+  margin-top:18px;
+  background:#ffffff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+  box-shadow: var(--shadow);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.testimonial-cta h3{
+  margin:0 0 6px;
+  font-size:16px;
+  color: var(--text);
+}
+
+.testimonial-cta p{
+  margin:0;
+  color: var(--muted);
+  max-width:70ch;
+}
+
+.testimonial-placeholder{
+  margin-top:16px;
+  background:#ffffff;
+  border:1px dashed var(--line);
+  border-radius:16px;
+  padding:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.testimonial-placeholder p{
+  margin:0;
+  max-width:70ch;
+}
+
+/* =========================
+   Footer
+   ========================= */
+.footer{
+  border-top:1px solid var(--line);
+  padding:22px 0;
+  background:#ffffff;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* =========================
+   Lightbox
+   ========================= */
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(2,6,23,.82);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  z-index:9999;
+}
+
+.lightbox.is-open{ display:flex; }
+
+.lightbox-inner{
+  max-width:1100px;
+  width:100%;
+}
+
+.lightbox-img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+  background:#0b1220;
+}
+
+.lightbox-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-top:10px;
+  color:#e2e8f0;
+  font-size:13px;
+}
+
+.lightbox-btn{
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.18);
+  color:#fff;
+  border-radius:12px;
+  padding:10px 12px;
+  cursor:pointer;
+  font-weight:800;
+}
+
+.lightbox-btn:hover{ background:rgba(255,255,255,.18); }
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 900px){
+  :root{
+    --header-big: 92px;
+    --header-small: 64px;
+  }
+
+  .nav-toggle{ display:inline-flex; align-items:center; justify-content:center; }
+
+  .nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-h);
+    background: rgba(255,255,255,.98);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 20px;
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .site-header.nav-open .nav{ display:flex; }
+
+  .hero-grid,.split{ grid-template-columns:1fr; }
+  .cards{ grid-template-columns:1fr; }
+  .gallery{ grid-template-columns:1fr; }
+  h1{ font-size:36px; }
+
+  .testimonial-cta,
+  .testimonial-placeholder{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .testimonial-cta a,
+  .testimonial-placeholder a{
+    width:100%;
+  }
+
+  .gcard img{ aspect-ratio: 16 / 10; }
+
+  .grid2{ grid-template-columns:1fr; }
+  .grid3{ grid-template-columns:1fr; }
+}
