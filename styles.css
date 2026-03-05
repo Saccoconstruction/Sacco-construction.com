@@ -58,9 +58,10 @@ a:hover{ opacity:.92; }
   align-items:center;
 }
 .logo{
-  height: 100%;
+  height: calc(var(--header-h) - 20px);
   width:auto;
   display:block;
+  transition: height .18s ease;
 }
 .nav{
   display:flex;
