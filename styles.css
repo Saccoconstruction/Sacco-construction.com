@@ -9,8 +9,8 @@
   --accent2:#1f3f54;
   --shadow: 0 10px 30px rgba(2,6,23,.08);
 
-  --header-big: 170px;
-  --header-small: 90px;
+  --header-big: 180px;
+  --header-small: 95px;
   --header-h: var(--header-big);
 }
 
