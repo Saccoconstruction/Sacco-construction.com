@@ -58,10 +58,14 @@ a:hover{ opacity:.92; }
   align-items:center;
 }
 .logo{
-  height: calc(var(--header-h) - 20px);
+  height:140px;
   width:auto;
   display:block;
-  transition: height .18s ease;
+  transition: height .25s ease;
+}
+
+.site-header.is-scrolled .logo{
+  height:70px;
 }
 .nav{
   display:flex;
