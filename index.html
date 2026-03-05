@@ -129,7 +129,6 @@
       </div>
     </section>
 
-    <!-- Gallery (unchanged content) -->
     <section id="gallery" class="section">
       <div class="container">
         <div class="section-head">
@@ -138,7 +137,6 @@
         </div>
 
         <div class="gallery-grid">
-          <!-- Basements -->
           <div class="gallery-group">
             <h3 class="gallery-h">Finished Basement — Salem, NH</h3>
             <div class="gallery">
@@ -152,7 +150,6 @@
             </div>
           </div>
 
-          <!-- Bathrooms -->
           <div class="gallery-group">
             <h3 class="gallery-h">Bathroom — Atkinson, NH</h3>
             <div class="gallery">
@@ -161,7 +158,6 @@
             </div>
           </div>
 
-          <!-- Commercial -->
           <div class="gallery-group">
             <h3 class="gallery-h">Commercial Office — Derry, NH</h3>
             <div class="gallery">
@@ -170,7 +166,6 @@
             </div>
           </div>
 
-          <!-- Decks -->
           <div class="gallery-group">
             <h3 class="gallery-h">Deck — Salem, NH</h3>
             <div class="gallery">
@@ -179,7 +174,6 @@
             </div>
           </div>
 
-          <!-- Kitchens / Details -->
           <div class="gallery-group">
             <h3 class="gallery-h">Kitchen &amp; Detail Work</h3>
             <div class="gallery">
@@ -196,7 +190,6 @@
       </div>
     </section>
 
-    <!-- Testimonials placeholder -->
     <section class="section">
       <div class="container">
         <div class="section-head">
@@ -210,16 +203,12 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <h2>Request an Estimate</h2>
           <p>Tell us about the project. We’ll follow up to schedule a walkthrough or next steps.</p>
         </div>
-
-        <!-- On-page success/error messages -->
-        <div id="formAlert" class="alert" role="status" aria-live="polite" style="display:none;"></div>
 
         <form
           id="estimateForm"
@@ -228,9 +217,8 @@
           method="POST"
           enctype="multipart/form-data"
         >
-          <!-- IMPORTANT: We intentionally do NOT redirect during testing.
-               Once it works, we can add _next back. -->
           <input type="hidden" name="_subject" value="NEW ESTIMATE REQUEST — Sacco Construction Website" />
+          <input type="hidden" name="_next" value="https://www.sacco-construction.com/thank-you.html" />
 
           <div class="grid2">
             <label>
@@ -327,7 +315,6 @@
     </div>
   </footer>
 
-  <!-- Header shrink + mobile nav -->
   <script>
   (() => {
     const header = document.getElementById("siteHeader");
@@ -361,12 +348,10 @@
   })();
   </script>
 
-  <!-- Year -->
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 
-  <!-- Lightbox -->
   <script>
     (function(){
       const imgs = Array.from(document.querySelectorAll(".gcard img"));
@@ -412,55 +397,5 @@
       document.addEventListener("keydown", (e) => { if(e.key === "Escape") close(); });
     })();
   </script>
-
-  <!-- Form submit: show on-page success/error (NO redirect). -->
-  <script>
-  (() => {
-    const form = document.getElementById("estimateForm");
-    const alertBox = document.getElementById("formAlert");
-    if (!form || !alertBox) return;
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      alertBox.style.display = "block";
-      alertBox.className = "alert";
-      alertBox.textContent = "Sending...";
-
-      try {
-        const fd = new FormData(form);
-
-        const res = await fetch(form.action, {
-          method: "POST",
-          body: fd,
-          headers: { "Accept": "application/json" }
-        });
-
-        if (res.ok) {
-          alertBox.className = "alert alert-success";
-          alertBox.textContent = "Success — request sent. If you uploaded files, they’re included with this submission.";
-          form.reset();
-          return;
-        }
-
-        // Try to read Formspree error details
-        let msg = "Something went wrong. Please try again or call 603-339-9116.";
-        try {
-          const data = await res.json();
-          if (data && data.error) msg = data.error;
-          if (data && data.errors && data.errors.length) msg = data.errors.map(x => x.message).join(" ");
-        } catch (_) {}
-
-        alertBox.className = "alert alert-error";
-        alertBox.textContent = msg;
-      } catch (err) {
-        alertBox.className = "alert alert-error";
-        alertBox.textContent = "Network error. Please try again or call 603-339-9116.";
-      }
-    });
-  })();
-  </script>
-
 </body>
 </html>
-
